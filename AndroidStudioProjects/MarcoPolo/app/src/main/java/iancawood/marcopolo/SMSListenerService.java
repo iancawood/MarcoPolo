@@ -23,7 +23,6 @@ public class SMSListenerService extends Service {
 
         Log.v(TAG, "Service created");
 
-        //SMS event receiver
         mSMSListener = new SMSListener();
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction("android.provider.Telephony.SMS_RECEIVED");
