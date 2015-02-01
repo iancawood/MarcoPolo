@@ -1,7 +1,11 @@
 package iancawood.marcopolo;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -43,6 +47,31 @@ public class Main extends Activity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Log.v(TAG, "in options");
+
+//        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+//        //Criteria criteria = new Criteria();
+//        //String provider = locationManager.getBestProvider(criteria, false);
+//        String provider = "gps";
+//        Location location = locationManager.getLastKnownLocation(provider);
+//
+//        Log.v(TAG, locationManager.toString());
+//        Log.v(TAG, provider);
+//        if (location == null) {
+//            Log.v(TAG, "NULL");
+//        } else {
+//            Log.v(TAG, location.toString());
+//        }
+
+//        LocationResult locationResult = new LocationResult(){
+//            @Override
+//            public void gotLocation(Location location){
+//
+//            }
+//        };
+//        MyLocation myLocation = new MyLocation();
+//        myLocation.getLocation(this, locationResult);
+
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
